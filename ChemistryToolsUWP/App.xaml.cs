@@ -54,7 +54,7 @@ namespace ChemistryToolsUWP
         public override async Task OnStartAsync(StartKind startKind, IActivatedEventArgs args)
         {
             // TODO: add your long-running task here
-            await PeriodicTable.PeriodTableData.SetupDatabases();
+            PeriodicTable.PeriodTableData.SetupDatabases();
             await NavigationService.NavigateAsync(typeof(Views.MainPage));
         }
     }

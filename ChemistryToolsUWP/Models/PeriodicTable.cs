@@ -47,7 +47,7 @@ namespace ChemistryToolsUWP.Models
         {
 
         }
-        public async Task SetupDatabases()
+        public async void SetupDatabases()
         {
 
             Int32 count = await DatabaseModel.PeriodTableConnection.ExecuteScalarAsync<Int32>("select count(*) from sqlite_master where name = 'Elements'");
@@ -64,15 +64,13 @@ namespace ChemistryToolsUWP.Models
                         {
                             if (command.Length > 0)
                             {
-                                Debug.WriteLine($"{await DatabaseModel.PeriodTableConnection.ExecuteAsync(command)} {command}");
+                                await DatabaseModel.PeriodTableConnection.ExecuteAsync(command);
                             }
                         }
                     }
                 }
                 Elements = new ObservableCollection<Element>((await DatabaseModel.PeriodTableConnection.QueryAsync<Element>("select * from Elements")).ToList<Element>());
                 RaisePropertyChanged("Elements");
-                foreach (Element e in Elements)
-                    Debug.WriteLine($"{e.Name} {e.ChemicalSymbol}");
             }
             catch(SQLiteException e)
             {

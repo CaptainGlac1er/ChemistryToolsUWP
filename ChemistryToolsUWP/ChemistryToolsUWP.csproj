@@ -17,7 +17,11 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>ChemistryToolsUWP_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>ChemistryToolsUWP_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>C41439F4120507024A13764D16E8F485F13A660E</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -90,6 +94,7 @@
   </PropertyGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <None Include="ChemistryToolsUWP_StoreKey.pfx" />
     <None Include="ChemistryToolsUWP_TemporaryKey.pfx" />
     <None Include="project.json" />
   </ItemGroup>
@@ -114,6 +119,7 @@
     <Compile Include="SQLiteAsync.cs" />
     <Compile Include="ViewModels\ElementIconViewModel.cs" />
     <Compile Include="ViewModels\ElementListModel.cs" />
+    <Compile Include="ViewModels\MoleculePageViewModel.cs" />
     <Compile Include="ViewModels\ElementPageViewModel.cs" />
     <Compile Include="ViewModels\GasCalculatorViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
@@ -124,6 +130,9 @@
     <Compile Include="ViewsElements\ElementIconView.xaml.cs">
       <DependentUpon>ElementIconView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewsElements\MoleculeListElement.xaml.cs">
+      <DependentUpon>MoleculeListElement.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewsElements\PeriodTable.xaml.cs">
       <DependentUpon>PeriodTable.xaml</DependentUpon>
     </Compile>
@@ -132,6 +141,9 @@
     </Compile>
     <Compile Include="Views\ElementListPage.xaml.cs">
       <DependentUpon>ElementListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MoleculePage.xaml.cs">
+      <DependentUpon>MoleculePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ElementPage.xaml.cs">
       <DependentUpon>ElementPage.xaml</DependentUpon>
@@ -213,6 +225,7 @@
     <Content Include="Assets\WideLogo.png" />
     <Content Include="Data\ChemistryTable.db.sql" />
     <Content Include="Help.htm" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +244,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewsElements\MoleculeListElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewsElements\PeriodTable.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -242,6 +259,10 @@
     <Page Include="Views\ElementListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MoleculePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\ElementPage.xaml">
       <SubType>Designer</SubType>

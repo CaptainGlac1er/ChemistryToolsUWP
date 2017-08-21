@@ -22,12 +22,12 @@ namespace ChemistryToolsUWP.Models
 	'Charge' INTEGER,
 	'Root' TEXT
     */
-        private int _MoleculeID;
-        private string _Name;
-        private string _Molecule;
-        private int _Charge;
-        private string _Root;
-        private string _Type;
+        private int _MoleculeID = 0;
+        private string _Name = "";
+        private string _Molecule = "";
+        private int _Charge = 0;
+        private string _Root = "";
+        private string _Type = "";
         private ObservableCollection<Element> _Equation = new ObservableCollection<Element>();
 
         [PrimaryKey, Column("MolID")]
@@ -40,7 +40,10 @@ namespace ChemistryToolsUWP.Models
         public string Name
         {
             get { return _Name; }
-            set { Set(ref _Name, value); }
+            set {
+                Set(ref _Name, value);
+                RaisePropertyChanged("FancyFormula");
+                }
         }
         [Column("Type")]
         public string Type
@@ -77,6 +80,11 @@ namespace ChemistryToolsUWP.Models
             {
                 Set(ref _Equation, value);
             }
+        }
+        [Ignore]
+        public string FancyFormula
+        {
+            get { return GetFancyText(); }
         }
 
         private string GetPrefix(int num)

@@ -60,108 +60,132 @@
                         <ColumnDefinition Width="50"/>
                         <ColumnDefinition Width="50"/>
                     </Grid.ColumnDefinitions>
-                    <local:ElementIconView Grid.Row="1" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[0]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="1" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[1]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="1" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[0], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="1" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[1], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
 
-                    <local:ElementIconView Grid.Row="2" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[2]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="2" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[3]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="2" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[4]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="2" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[5]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="2" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[6]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="2" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[7]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="2" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[8]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="2" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[9]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[2], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[3], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[4], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[5], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[6], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[7], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[8], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="2" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[9], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
 
-                    <local:ElementIconView Grid.Row="3" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[10]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="3" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[11]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="3" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[12]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="3" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[13]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="3" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[14]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="3" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[15]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="3" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[16]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="3" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[17]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[10], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[11], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[12], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[13], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[14], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[15], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[16], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="3" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[17], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
 
-                    <local:ElementIconView Grid.Row="4" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[18]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[19]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[20]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[21]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[22]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[23]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[24]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[25]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[26]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[27]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[28]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[29]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[30]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[31]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[32]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[33]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[34]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="4" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[35]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[18], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[19], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[20], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[21], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[22], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[23], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[24], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[25], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[26], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[27], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[28], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[29], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[30], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[31], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[32], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[33], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[34], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="4" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[35], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
                     
-                    <local:ElementIconView Grid.Row="5" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[36]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[37]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[38]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[39]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[40]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[41]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[42]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[43]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[44]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[45]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[46]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[47]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[48]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[49]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[50]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[51]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[52]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="5" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[53]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[36], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[37], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[38], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[39], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[40], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[41], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[42], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[43], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[44], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[45], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[46], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[47], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[48], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[49], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[50], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[51], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[52], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="5" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[53], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
 
-                    <local:ElementIconView Grid.Row="6" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[54]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[55]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[54], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[55], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
 
-                    <local:ElementIconView Grid.Row="9" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[56]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[57]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[58]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[59]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[60]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[61]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[62]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[63]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[64]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[65]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[66]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[67]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[68]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[69]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="9" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[70]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[56], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[57], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[58], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[59], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[60], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[61], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[62], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[63], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[64], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[65], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[66], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[67], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[68], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[69], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="9" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[70], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
 
 
-                    <local:ElementIconView Grid.Row="6" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[71]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[72]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[73]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[74]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[75]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[76]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[77]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[78]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[79]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[80]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[81]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[82]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[83]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[84]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="6" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[85]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    
-                    
-                    <local:ElementIconView Grid.Row="7" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[86]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="7" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[87]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[71], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[72], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[73], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[74], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[75], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[76], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[77], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[78], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[79], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[80], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[81], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[82], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[83], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[84], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="6" Grid.Column="17" ElementShown="{x:Bind ViewModel.Table.Elements[85], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
                     
                     
-                    <local:ElementIconView Grid.Row="10" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[88]}" ElementTapped="ElementIconView_ElementTapped"/>
-                    <local:ElementIconView Grid.Row="10" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[89]}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="0" ElementShown="{x:Bind ViewModel.Table.Elements[86], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="1" ElementShown="{x:Bind ViewModel.Table.Elements[87], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    
+                    
+                    <local:ElementIconView Grid.Row="10" Grid.Column="2" ElementShown="{x:Bind ViewModel.Table.Elements[88], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[89], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[90], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[91], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[92], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[93], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[94], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[95], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[96], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[97], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="12" ElementShown="{x:Bind ViewModel.Table.Elements[98], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="13" ElementShown="{x:Bind ViewModel.Table.Elements[99], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="14" ElementShown="{x:Bind ViewModel.Table.Elements[100], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="15" ElementShown="{x:Bind ViewModel.Table.Elements[101], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="10" Grid.Column="16" ElementShown="{x:Bind ViewModel.Table.Elements[102], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+
+
+                    <local:ElementIconView Grid.Row="7" Grid.Column="3" ElementShown="{x:Bind ViewModel.Table.Elements[103], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="4" ElementShown="{x:Bind ViewModel.Table.Elements[104], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="5" ElementShown="{x:Bind ViewModel.Table.Elements[105], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="6" ElementShown="{x:Bind ViewModel.Table.Elements[106], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="7" ElementShown="{x:Bind ViewModel.Table.Elements[107], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="8" ElementShown="{x:Bind ViewModel.Table.Elements[108], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="9" ElementShown="{x:Bind ViewModel.Table.Elements[109], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="10" ElementShown="{x:Bind ViewModel.Table.Elements[110], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
+                    <local:ElementIconView Grid.Row="7" Grid.Column="11" ElementShown="{x:Bind ViewModel.Table.Elements[111], Mode=OneWay}" ElementTapped="ElementIconView_ElementTapped"/>
 
                 </Grid>
             </Viewbox>

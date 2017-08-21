@@ -7,11 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:vm="using:ChemistryToolsUWP.ViewModels"
     xmlns:controls="using:Template10.Controls"
+    xmlns:viewselements="using:ChemistryToolsUWP.ViewsElements"
+    xmlns:converters="using:ChemistryToolsUWP.Converters"
     mc:Ignorable="d">
 
     <Page.DataContext>
         <vm:NameMoleculeViewModel x:Name="ViewModel" />
     </Page.DataContext>
+    <Page.Resources>
+        <converters:NullToVisibility x:Key="NullToVisibilityConverter"/>
+    </Page.Resources>
 
     <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
@@ -73,12 +78,23 @@
                                RelativePanel.AlignBottomWithPanel="True" 
                                RelativePanel.AlignLeftWithPanel="True" 
                                RelativePanel.AlignRightWithPanel="True">
-                    <TextBlock Text="{x:Bind ViewModel.Output, Mode=TwoWay}" 
-                               RelativePanel.AlignTopWithPanel="True" 
-                               RelativePanel.AlignBottomWithPanel="True" 
+                    <viewselements:MoleculeListElement MoleculeToShow="{x:Bind ViewModel.CurrentMolecule, Mode=OneWay}" x:Name="CurrentMolecule"
+                                                       
                                RelativePanel.AlignLeftWithPanel="True" 
                                RelativePanel.AlignRightWithPanel="True"
-                               Margin="2"/>
+                                                       RelativePanel.AlignHorizontalCenterWithPanel="True"
+                                                       RelativePanel.AlignTopWithPanel="True" 
+                                                       MaxWidth="500"
+                                                       Margin="10"
+                                                       MoleculeTapped="CurrentMolecule_MoleculeTapped"
+                                                       Visibility="{x:Bind ViewModel.CurrentMolecule, Converter={StaticResource NullToVisibilityConverter}, Mode=OneWay}"
+                                                       />
+                    <!--<TextBlock Text="{x:Bind ViewModel.Output, Mode=TwoWay}" 
+                               RelativePanel.Below="CurrentMolecule"
+                               RelativePanel.AlignBottomWithPanel="True"
+                               RelativePanel.AlignLeftWithPanel="True" 
+                               RelativePanel.AlignRightWithPanel="True"
+                               Margin="2"/>-->
                 </RelativePanel>
             </RelativePanel>
         </RelativePanel>

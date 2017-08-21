@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS 'AtomicTypes'(
 	'ATID' INTEGER PRIMARY KEY,
 	'Type' Text NOT NULL
 );
+INSERT OR REPLACE INTO `AtomicTypes` (ATID, Type) VALUES (0, 'neutral');
 INSERT OR REPLACE INTO `AtomicTypes` (ATID, Type) VALUES (1, 'cation');
 INSERT OR REPLACE INTO `AtomicTypes` (ATID, Type) VALUES (2, 'anion');
 
@@ -124,6 +125,18 @@ INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Ro
 INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (98,'Californium',	'Cf',	251,		7,	NULL,		2,	2);
 INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (99,'Einsteinium',	'Es',	252,		7,	NULL,		2,	2);
 INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (100,'Fermium',	'Fm',	257,		7,	NULL,		2,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (101,'Mendelevium','Md',	258,		7,	NULL,		2,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (102,'Nobelium',	'No',	259,		7,	NULL,		2,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (103,'Lawrencium',	'Lr',	262,		7,	NULL,		2,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (104,'Rutherfordium','Rf',	261,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (105,'Dubnium',	'Db',	262,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (106,'Seaborgium',	'Sg',	266,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (107,'Bohrium',	'Bh',	264,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (108,'Hassium',	'Hs',	269,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (109,'Meitnerium',	'Mt',	268,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (110,'Darmstadtium','Ds',	269,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (111,'Roentgenium','Rg',	272,		7,	NULL,		9,	2);
+INSERT OR REPLACE INTO `Element` (AtomicNumber,Name,ChemicalSymbol,Amu,Period,Root,CatID,Valence) VALUES (112,'Copernicium','Cn',	277,		7,	NULL,		9,	2);
 
 DROP TABLE IF EXISTS `Categories`;
 CREATE TABLE IF NOT EXISTS `Categories` (
@@ -160,6 +173,25 @@ INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES (
 INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('nitrate', 'NO3', -1, 'nitr', 2);
 INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('sulfite', 'SO3', -2, 'sulf', 2);
 INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('sulfate', 'SO4', -2, 'sulf', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('hydrogen sulfate', 'HSO4', -1, NULL, 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('hydroxide', 'OH', -1, NULL, 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('cyanide', 'CN', -1, 'cyan', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('phosphate', 'PO4', -3, 'phosph', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('hydrogen phosphate', 'HPO4', -2, NULL, 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('dihydrogen phosphate', 'H2PO4', -1, NULL, 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('carbonate', 'CO3', -2, 'carbon', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('hydrogen carbonate', 'HCO3', -2, NULL, 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('hypochlorite', 'ClO', -1, 'hypochlor', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('chlorite', 'ClO2', -1, 'chlor', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('chlorate', 'ClO3', -1, 'chlor', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('perchlorate', 'ClO4', -1, 'perchlor', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('acetate', 'C2H3O2', -1, 'acet', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('permanganate', 'MnO4', -1, 'permangan', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('dichromate', 'Cr2O7', -2, 'dichrom', 2);
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('peroxide', 'O2', -2, 'perox', 2);
+
+INSERT OR REPLACE INTO 'Molecules' (Name, Molecule, Charge, Root, Type) VALUES ('hydrogen peroxide', 'H2O2', 0, NULL, 0);
+
 
 DROP TABLE IF EXISTS `Polyatomic`;
 CREATE TABLE IF NOT EXISTS 'Polyatomic' (
@@ -171,4 +203,20 @@ INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules
 INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'NO3'));
 INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'SO3'));
 INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'SO4'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'HSO4'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'OH'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'CN'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'PO4'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'HPO4'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'H2PO4'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'CO3'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'HCO3'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'ClO'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'ClO2'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'ClO3'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'ClO4'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'C2H3O2'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'MnO4'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'Cr2O7'));
+INSERT OR REPLACE INTO 'Polyatomic' (MolID) VALUES ((SELECT MolID from Molecules WHERE Molecule = 'O2'));
 COMMIT;
