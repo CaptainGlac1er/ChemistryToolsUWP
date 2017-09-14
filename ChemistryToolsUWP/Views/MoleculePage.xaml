@@ -54,7 +54,7 @@
                              RelativePanel.AlignLeftWithPanel="True"
                              RelativePanel.AlignRightWithPanel="True"
                              RelativePanel.AlignTopWithPanel="True"
-                             Text="Element" />
+                             Text="Molecule" />
 
         <!--  content  -->
         <ScrollViewer 
@@ -70,6 +70,10 @@
                 <StackPanel Visibility="{x:Bind ViewModel.MoleculeToShow.FancyFormula, Converter={StaticResource NullToVisibilityConverter}}">
                     <TextBlock Style="{StaticResource TitleTextBlockStyle}" Foreground="{StaticResource AccentColor}" Text="Formula:"/>
                     <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{x:Bind ViewModel.MoleculeToShow.FancyFormula, Mode=OneWay}" />
+                </StackPanel>
+                <StackPanel Visibility="{x:Bind ViewModel.MoleculeToShow.Valence, Converter={StaticResource NullToVisibilityConverter}}">
+                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Foreground="{StaticResource AccentColor}" Text="Valence:"/>
+                    <TextBlock Style="{StaticResource SubtitleTextBlockStyle}" Text="{x:Bind ViewModel.MoleculeToShow.Valence, Mode=OneWay}" />
                 </StackPanel>
             </StackPanel>
         </ScrollViewer>

@@ -54,7 +54,7 @@ namespace ChemistryToolsUWP.ViewModels
             if(molecule != null)
             {
                 CurrentMolecule = molecule;
-                Output += $"{CurrentMolecule.GetFancyText()} is {CurrentMolecule.Name}\n";
+                Output += $"{CurrentMolecule.FancyFormula} is {CurrentMolecule.Name}\n";
             }
             else
             {

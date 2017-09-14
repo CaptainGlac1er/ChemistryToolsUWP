@@ -17,7 +17,7 @@
                 HorizontalScrollMode="Auto"
                 VerticalScrollMode="Auto"
                 HorizontalScrollBarVisibility="Auto"
-                VerticalScrollBarVisibility="Auto">
+                VerticalScrollBarVisibility="Auto" ZoomMode="Enabled">
         <StackPanel>
             <Viewbox StretchDirection="Both" Stretch="Uniform" Width="Auto" MinWidth="800">
                 <Grid>
